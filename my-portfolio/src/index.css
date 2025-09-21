@@ -31,6 +31,14 @@ h1{
   font-size: 5rem;
 }
 
+h2{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
 h3 {
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
