@@ -39,12 +39,12 @@
     </section>
 
     <section class="bg-sec p-16 flex grid-cols-2">
-      <div class="mr-30 ">
+      <div class="ml-10 mr-30 col-span-1 justify-center text-main">
         <h2 class="text-main">INVOLVEMENT</h2>
         <h3 class="text-main">SESA | MARKETING COORDINATOR</h3>
         <p class="text-main">Software Engineering Students' Association (SESA) is a student-run organisation that aims to enhance the experience of software engineering students at the University of Auckland. As the Marketing Coordinator, I design graphics and promotional materials for events for software engineering students to connect, learn, and have fun.</p>
       </div>
-      <div>
+      <div class="mr-20 col-span-1">
         <img src="/src/assets/sesaTeam.png" alt="SESA Team" width="100%"/>
       </div>
     </section>
@@ -53,12 +53,21 @@
       <h2>CHECKOUT MY WORK!</h2>
       <div class="flex grid-cols-2 p-8">
         <div class="ml-30 mr-30">
-          <a href="#" class=""><img src="/src/assets/projectIcon.png" alt="Projects" /></a>
-          <h3 class="text-black">PROJECTS</h3>
+          <a href="#">
+            <div class="hover:drop-shadow-xl/30 hover:scale-105 transition-transform duration-300">
+              <img src="/src/assets/projectIcon.png" alt="Projects" />
+              <h3 class="text-black">PROJECTS</h3>
+            </div>
+          </a>        
         </div>
+
         <div class="ml-30 mr-30">
-          <a href="#" class=""><img src="/src/assets/designIcon.png" alt="Design" /></a>
-          <h3 class="text-black">DESIGN</h3>
+          <a href="#">
+            <div class="hover:drop-shadow-xl/30 hover:scale-105 transition-transform duration-300">
+              <img src="/src/assets/designIcon.png" alt="Design" />
+              <h3 class="text-black">DESIGN</h3>
+            </div>
+          </a>
         </div>
       </div>
     </section>
