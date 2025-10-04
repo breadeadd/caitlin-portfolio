@@ -1,6 +1,15 @@
-document.querySelectorAll(".project-card").forEach(card => {
-  const inner = card.querySelector(".card-inner");
-  card.addEventListener("click", () => {
-    inner.classList.toggle("rotate-y-180");
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Prevent link clicks from triggering flip
+            if (e.target.tagName === 'A') {
+                return;
+            }
+            
+            // Toggle flip state
+            this.classList.toggle('flipped');
+        });
+    });
 });

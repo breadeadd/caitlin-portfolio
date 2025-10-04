@@ -89,11 +89,28 @@ p {
 }
 
 
-/* polaroid style */
-.front-polaroid {
-    @apply bg-main rounded-xl;
+/* polaroid flipping */
+/* input.css */
+.project-card {
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-.back-polaroid {
-    @apply bg-main rounded-xl ;
+.inner-card {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card.flipped .inner-card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
