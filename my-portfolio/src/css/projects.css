@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-accent: #395c40;
+  --color-sec: #61956b;
+  --color-main: #fff7dd;
+  --color-black: #242424;
+  
+  --font-family-main: "League Spartan", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Minimal reset - only target specific elements, not everything */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-main);
+}
+
+/* Remove default margins from headings and paragraphs only */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+h2{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.opacity-100 {
+  opacity: 1;
+}
+
+.reveal.translate-y-0 {
+  transform: translateY(0);
+}
+
+.front-polaroid {
+    @apply bg-main rounded-xl;
+}
+
+.back-polaroid {
+    @apply bg-black text-main rounded-xl ;
+}
