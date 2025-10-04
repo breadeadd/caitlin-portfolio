@@ -16,6 +16,7 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-color: var(--color-main);
 }
 
 /* Remove default margins from headings and paragraphs only */
@@ -61,4 +62,19 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.opacity-100 {
+  opacity: 1;
+}
+
+.reveal.translate-y-0 {
+  transform: translateY(0);
 }
