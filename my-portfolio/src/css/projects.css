@@ -49,6 +49,14 @@ h3 {
   font-size: 2rem;
 }
 
+.h3-look {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
+
 h4 {
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
@@ -80,10 +88,12 @@ p {
   transform: translateY(0);
 }
 
+
+/* polaroid style */
 .front-polaroid {
     @apply bg-main rounded-xl;
 }
 
 .back-polaroid {
-    @apply bg-black text-main rounded-xl ;
+    @apply bg-main rounded-xl ;
 }
