@@ -3,6 +3,7 @@ const robogalsbtn = document.querySelector("#robogalsBtn");
 const title = document.querySelector("#title");
 const description = document.querySelector("#description");
 const div = document.querySelector("#hello");
+const clubImg = document.querySelector("#clubPic");
 
 //initial text
 const helloText = "Hello, I am Caitlin!";
@@ -13,6 +14,10 @@ const sesaTitle = "SESA | MARKETING COORDINATOR";
 const sesaDesc = "Software Engineering Students Association (SESA) aims to enhance the experience of software engineering students at UoA. As the Marketing Coordinator, I design graphics and promotional materials for events for students to connect, learn, and have fun. During my time in this role, I have established an iconic branding and mascot design for SESA.";
 const robogalsTitle = "ROBOGALS AKL | MARKETING MANAGER";
 const robogalsDesc = "Robogals AKL is an organization that aims to inspire and empower young women to pursue careers in STEM. As the Marketing Manager, I am responsible for creating promotional materials and managing our social media presence to engage with our community and attract new members. Furthermore I actively volunteer at our various workshops.";
+
+//photos
+const sesaPic = "src/assets/sesa.webp";
+const robogalsPic = "src/assets/robogals.JPG";
 
 
 //track typing operations
@@ -75,18 +80,21 @@ textTypingEffect(div, helloText);
 title.textContent = sesaTitle;
 description.textContent = sesaDesc;
 setActiveButton(sesabtn);
+clubImg.src = sesaPic;
 
 //buttons for changing involvement text
 sesabtn.addEventListener("click", () => {
   setActiveButton(sesabtn)
   startTyping(title, sesaTitle, titleController);
   description.textContent = sesaDesc;
+  clubImg.src = sesaPic;
 });
 
 robogalsbtn.addEventListener("click", () => {
   setActiveButton(robogalsbtn);
   startTyping(title, robogalsTitle, titleController);
   description.textContent = robogalsDesc;
+  clubImg.src = robogalsPic;
 });
 
 //scrolling reveal
