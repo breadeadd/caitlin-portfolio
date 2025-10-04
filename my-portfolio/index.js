@@ -56,35 +56,37 @@ function startTyping(element, text, controller) {
   textTypingEffect(element, text, 0, typingController);
 }
 
+//changing buttons
+function setActiveButton(activeBtn){
+// Reset all buttons to default state
+  buttons.forEach(b => {
+    b.classList.remove("bg-[#497852]");
+    b.classList.add("bg-accent", "text-main");
+  });
+  
+  // Set active button
+  activeBtn.classList.remove("bg-accent");
+  activeBtn.classList.add("bg-[#497852]", "text-main");
+}
+
 
 //Starting State
 textTypingEffect(div, helloText);
 title.textContent = sesaTitle;
 description.textContent = sesaDesc;
-
+setActiveButton(sesabtn);
 
 //buttons for changing involvement text
 sesabtn.addEventListener("click", () => {
+  setActiveButton(sesabtn)
   startTyping(title, sesaTitle, titleController);
   description.textContent = sesaDesc;
 });
 
 robogalsbtn.addEventListener("click", () => {
+  setActiveButton(robogalsbtn);
   startTyping(title, robogalsTitle, titleController);
   description.textContent = robogalsDesc;
 });
 
-//changing buttons
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    //unactive button
-    buttons.forEach(b => b.classList.remove("bg-accent", "text-white"));
 
-    //default
-    buttons.forEach(b => b.classList.add("bg-accent", "text-main"));
-
-    //active button
-    btn.classList.remove("bg-accent", "text-main");
-    btn.classList.add("bg-[#497852]","text-main");
-  })
-})
