@@ -13,3 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//scrolling reveal
+// Select all elements you want to animate
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "transition-discrete", "duration-15s");
+        // optional: stop observing after animation plays
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.5 // 70% of the element must be visible
+  }
+);
+
+// Watch each reveal element
+reveals.forEach(reveal => {
+  observer.observe(reveal);
+});

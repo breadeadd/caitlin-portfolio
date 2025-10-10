@@ -78,3 +78,14 @@ p {
 .reveal.translate-y-0 {
   transform: translateY(0);
 }
+
+/* Hide scrollbar for horizontal scrolling containers */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
