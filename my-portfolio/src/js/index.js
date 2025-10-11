@@ -112,7 +112,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.15 // 15% of the element must be visible
+    threshold: 0.4 // 40% of the element must be visible
   }
 );
 
