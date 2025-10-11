@@ -46,27 +46,34 @@
         <div class="pt-8 text-main flex-shrink-0">
             <h2 class="reveal">UNCOVER THE DESIGN PROCESS</h2>
             <h3 class="reveal pb-4">STORYBOARD</h3>
-          <div class="reveal flex-1 h-screen overflow-x-auto overflow-y-hidden flex gap-4 snap-x snap-mandatory py-6 scrollbar-hide">
-            <img src="/src/assets/glassHalfFull/storyboards/storyboard1.png" class="h-full w-auto p-5 object-contain snap-start rounded-lg flex-shrink-0" alt="Storyboard1"/>
-            <img src="/src/assets/glassHalfFull/storyboards/storyboard2.png" class="h-full w-auto p-5 object-contain snap-start rounded-lg flex-shrink-0" alt="Storyboard2"/>
-            <img src="/src/assets/glassHalfFull/storyboards/storyboard3.png" class="h-full w-auto p-5 object-contain snap-start rounded-lg flex-shrink-0" alt="Storyboard3"/>
-            <img src="/src/assets/glassHalfFull/storyboards/storyboard4.png" class="h-full w-auto p-5 object-contain snap-start rounded-lg flex-shrink-0" alt="Storyboard4"/>
+          <div id="storyboard-scroll" class="reveal flex-1 h-screen overflow-x-auto overflow-y-hidden flex gap-4 snap-x snap-mandatory snap-center py-6 scrollbar-hide">
+            <!-- start spacer -->
+            <div class="flex-shrink-0 w-[50vw]"></div>
+            <!-- images -->
+            <img src="/src/assets/glassHalfFull/storyboards/storyboard1.png" class="h-full w-auto p-5 object-contain snap-center rounded-lg flex-shrink-0" alt="Storyboard1"/>
+            <img src="/src/assets/glassHalfFull/storyboards/storyboard2.png" class="h-full w-auto p-5 object-contain snap-center rounded-lg flex-shrink-0" alt="Storyboard2"/>
+            <img src="/src/assets/glassHalfFull/storyboards/storyboard3.png" class="h-full w-auto p-5 object-contain snap-center rounded-lg flex-shrink-0" alt="Storyboard3"/>
+            <img src="/src/assets/glassHalfFull/storyboards/storyboard4.png" class="h-full w-auto p-5 object-contain snap-center rounded-lg flex-shrink-0" alt="Storyboard4"/>
+            <!-- end spacer -->
+            <div class="flex-shrink-0 w-[50vw]"></div>  
           </div>
 
           <h3 class="reveal">SCENE DESIGN</h3>
           <p class="reveal text-main">The bedroom was modelled in Blender, with a focus on creating a realistic and immersive environment. Some assets such as posters and packaging were designed in Adobe Illustrator. A cell shading effect was applied to match the overall aesthetic.</p>
-          <button id="sceneBtn" class="reveal bg-main text-black rounded-lg pt-2 pb-2 pl-4 pr-4 mt-4"><p>Before/After</p></button>
-          <div class = "grid grid-cols-2 grid-rows-2 gap-6 p-10">
-            <img id="scene1" src="/src/assets/glassHalfFull/scenes/blender/room1.png" alt="Scene Design 1" width="100%"/>
-            <img id="scene2" src="/src/assets/glassHalfFull/scenes/blender/room2.png" alt="Scene Design 2" width="100%"/>
-            <img id="scene3" src="/src/assets/glassHalfFull/scenes/blender/room3.png" alt="Scene Design 3" width="100%"/>
-            <img id="scene4" src="/src/assets/glassHalfFull/scenes/blender/room4.png" alt="Scene Design 4" width="100%"/>
+          <div class="h-screen overflow-hidden pt-10">
+            <button id="sceneBtn" class="reveal bg-main text-black rounded-lg ml-10 pt-2 pb-2 pl-4 pr-4 mt-4"><p>Before/After</p></button>
+            <div class = "grid grid-cols-2 grid-rows-2 gap-4 pl-10 pr-10 pt-4 pb-4">
+              <img id="scene1" src="/src/assets/glassHalfFull/scenes/blender/room1.png" alt="Scene Design 1" width="100%"/>
+              <img id="scene2" src="/src/assets/glassHalfFull/scenes/blender/room2.png" alt="Scene Design 2" width="100%"/>
+              <img id="scene3" src="/src/assets/glassHalfFull/scenes/blender/room3.png" alt="Scene Design 3" width="100%"/>
+              <img id="scene4" src="/src/assets/glassHalfFull/scenes/blender/room4.png" alt="Scene Design 4" width="100%"/>
+            </div>
           </div>
-          <p class="reveal text-main">City scenes were all created in Adobe Illustrator, with a focus on capturing the vibrant and chaotic essence of a cyberpunk world.</p>
           <div class="p-10">
+            <p class="reveal pb-4 text-main">City scenes were all created in Adobe Illustrator, with a focus on capturing the vibrant and chaotic essence of a cyberpunk world.</p>
             <img class="reveal" src="/src/assets/glassHalfFull/scenes/city/cityWalk.jpg" alt="City Scene 1" width="100%"/>
-            <img class="reveal" src="/src/assets/glassHalfFull/scenes/city/rooftopRun.jpg" alt="City Scene 2" width="100%"/>
             <img class="reveal" src="/src/assets/glassHalfFull/scenes/city/rooftopLook.jpg" alt="City Scene 3" width="100%"/>
+            <img class="reveal" src="/src/assets/glassHalfFull/scenes/city/rooftopRun.jpg" alt="City Scene 2" width="100%"/>
           </div>
           <div class="p-10 pt-1">
             <div class="grid grid-cols-2 gap-4">
