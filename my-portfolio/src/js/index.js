@@ -15,9 +15,9 @@ const sesaDesc = "Software Engineering Students Association (SESA) aims to enhan
 const robogalsTitle = "ROBOGALS AKL | MARKETING MANAGER";
 const robogalsDesc = "Robogals AKL is an organization that aims to inspire and empower young women to pursue careers in STEM. As the Marketing Manager, I am responsible for creating promotional materials and managing our social media presence to engage with our community and attract new members. Furthermore I actively volunteer at our various workshops.";
 
-//photos
-const sesaPic = "src/assets/index/sesa.png";
-const robogalsPic = "src/assets/index/robogalsakl.png";
+//photos - import images for proper bundling
+import sesaPic from '../assets/index/sesa.png';
+import robogalsPic from '../assets/index/robogalsakl.png';
 
 
 //track typing operations

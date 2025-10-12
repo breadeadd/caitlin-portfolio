@@ -29,15 +29,15 @@ const scene2 = document.querySelector("#scene2");
 const scene3 = document.querySelector("#scene3");
 const scene4 = document.querySelector("#scene4");
 
-const room1 = "src/assets/glassHalfFull/scenes/blender/room1.png";
-const room2 = "src/assets/glassHalfFull/scenes/blender/room2.png";
-const room3 = "src/assets/glassHalfFull/scenes/blender/room3.png";
-const room4 = "src/assets/glassHalfFull/scenes/blender/room4.png";
-
-const room1B = "src/assets/glassHalfFull/scenes/blender/room1Before.png";
-const room2B = "src/assets/glassHalfFull/scenes/blender/room2Before.png";
-const room3B = "src/assets/glassHalfFull/scenes/blender/room3Before.png";
-const room4B = "src/assets/glassHalfFull/scenes/blender/room4Before.png";
+// Import images for proper bundling
+import room1 from '../assets/glassHalfFull/scenes/blender/room1.png';
+import room2 from '../assets/glassHalfFull/scenes/blender/room2.png';
+import room3 from '../assets/glassHalfFull/scenes/blender/room3.png';
+import room4 from '../assets/glassHalfFull/scenes/blender/room4.png';
+import room1B from '../assets/glassHalfFull/scenes/blender/room1Before.png';
+import room2B from '../assets/glassHalfFull/scenes/blender/room2Before.png';
+import room3B from '../assets/glassHalfFull/scenes/blender/room3Before.png';
+import room4B from '../assets/glassHalfFull/scenes/blender/room4Before.png';
 
 let before = true;
 
@@ -74,6 +74,5 @@ function switchImages(){
 sceneBtn.addEventListener("click", () => {
     switchImages();
 })
-
 
 
