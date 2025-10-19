@@ -7,7 +7,6 @@ const clubImg = document.querySelector("#clubPic");
 
 //initial text
 const helloText = "Hello, I am Caitlin!";
-
 const buttons = document.querySelectorAll(".btn");
 
 const sesaTitle = "SESA | MARKETING COORDINATOR";
@@ -15,76 +14,57 @@ const sesaDesc = "Software Engineering Students Association (SESA) aims to enhan
 const robogalsTitle = "ROBOGALS AKL | MARKETING MANAGER";
 const robogalsDesc = "Robogals AKL is an organization that aims to inspire and empower young women to pursue careers in STEM. As the Marketing Manager, I am responsible for creating promotional materials and managing our social media presence to engage with our community and attract new members. Furthermore I actively volunteer at our various workshops.";
 
-//photos - import images for proper bundling
-import sesaPic from '../assets/index/sesa.png';
-import robogalsPic from '../assets/index/robogalsakl.png';
+// Images as URL strings
+const sesaPic = '/caitlin-portfolio/images/index/sesa.png';
+const robogalsPic = '/caitlin-portfolio/images/index/robogalsakl.png';
 
-
-//track typing operations
+// Typing effect
 let titleController = { current: null };
 
 function textTypingEffect(element, text, i = 0, typingController = null) {
-  if (typingController && typingController.cancelled) {
-    return;
-  }
-  
-  if (i === 0) {
-    element.textContent = "";
-  }
+  if (typingController && typingController.cancelled) return;
+
+  if (i === 0) element.textContent = "";
 
   element.textContent += text[i];
 
-  if (i === text.length - 1) {
-    return;
-  }
+  if (i === text.length - 1) return;
 
   const timeoutId = setTimeout(() => textTypingEffect(element, text, i + 1, typingController), 50);
 
-  if (typingController) {
-    typingController.timeoutId = timeoutId;
-  }
+  if (typingController) typingController.timeoutId = timeoutId;
 }
 
 function startTyping(element, text, controller) {
-  // Cancel previous typing for this element
   if (controller.current) {
     controller.current.cancelled = true;
-    if (controller.current.timeoutId) {
-      clearTimeout(controller.current.timeoutId);
-    }
+    if (controller.current.timeoutId) clearTimeout(controller.current.timeoutId);
   }
-  // Create new typing controller
   const typingController = { cancelled: false, timeoutId: null };
   controller.current = typingController;
-
-  // Start typing
   textTypingEffect(element, text, 0, typingController);
 }
 
-//changing buttons
-function setActiveButton(activeBtn){
-// Reset all buttons to default state
+// Button state
+function setActiveButton(activeBtn) {
   buttons.forEach(b => {
     b.classList.remove("bg-[#497852]");
     b.classList.add("bg-accent", "text-main");
   });
-  
-  // Set active button
   activeBtn.classList.remove("bg-accent");
   activeBtn.classList.add("bg-[#497852]", "text-main");
 }
 
-
-//Starting State
+// Starting State
 textTypingEffect(div, helloText);
 title.textContent = sesaTitle;
 description.textContent = sesaDesc;
 setActiveButton(sesabtn);
 clubImg.src = sesaPic;
 
-//buttons for changing involvement text
+// Button click handlers
 sesabtn.addEventListener("click", () => {
-  setActiveButton(sesabtn)
+  setActiveButton(sesabtn);
   startTyping(title, sesaTitle, titleController);
   description.textContent = sesaDesc;
   clubImg.src = sesaPic;
@@ -97,8 +77,7 @@ robogalsbtn.addEventListener("click", () => {
   clubImg.src = robogalsPic;
 });
 
-//scrolling reveal
-// Select all elements you want to animate
+// Scrolling reveal
 const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -106,19 +85,11 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("opacity-100", "translate-y-0");
-        // optional: stop observing after animation plays
         observer.unobserve(entry.target);
       }
     });
   },
-  {
-    threshold: 0.4 // 40% of the element must be visible
-  }
+  { threshold: 0.4 }
 );
 
-// Watch each reveal element
-reveals.forEach(reveal => {
-  observer.observe(reveal);
-});
-
-
+reveals.forEach(reveal => observer.observe(reveal));
