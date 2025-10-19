@@ -23,14 +23,14 @@ const scene3 = document.querySelector("#scene3");
 const scene4 = document.querySelector("#scene4");
 
 // Images as URL strings
-const room1 = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room1.png';
-const room2 = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room2.png';
-const room3 = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room3.png';
-const room4 = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room4.png';
-const room1B = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room1Before.png';
-const room2B = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room2Before.png';
-const room3B = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room3Before.png';
-const room4B = '/caitlin-portfolio/images/glassHalfFull/scenes/blender/room4Before.png';
+const room1 = '../images/glassHalfFull/scenes/blender/room1.png';
+const room2 = '../images/glassHalfFull/scenes/blender/room2.png';
+const room3 = '../images/glassHalfFull/scenes/blender/room3.png';
+const room4 = '../images/glassHalfFull/scenes/blender/room4.png';
+const room1B = '../images/glassHalfFull/scenes/blender/room1Before.png';
+const room2B = '../images/glassHalfFull/scenes/blender/room2Before.png';
+const room3B = '../images/glassHalfFull/scenes/blender/room3Before.png';
+const room4B = '../images/glassHalfFull/scenes/blender/room4Before.png';
 
 let before = true;
 

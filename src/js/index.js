@@ -15,8 +15,8 @@ const robogalsTitle = "ROBOGALS AKL | MARKETING MANAGER";
 const robogalsDesc = "Robogals AKL is an organization that aims to inspire and empower young women to pursue careers in STEM. As the Marketing Manager, I am responsible for creating promotional materials and managing our social media presence to engage with our community and attract new members. Furthermore I actively volunteer at our various workshops.";
 
 // Images as URL strings
-const sesaPic = '/caitlin-portfolio/images/index/sesa.png';
-const robogalsPic = '/caitlin-portfolio/images/index/robogalsakl.png';
+const sesaPic = '../images/index/sesa.png';
+const robogalsPic = '../images/index/robogalsakl.png';
 
 // Typing effect
 let titleController = { current: null };
