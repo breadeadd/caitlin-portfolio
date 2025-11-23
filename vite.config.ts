@@ -4,14 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/caitlin-portfolio/',
   plugins: [
     react(),
     tailwindcss()
   ],
   build: {
-    emptyOutDir: true,
-
     rollupOptions: {
       input: [
         './index.html',
