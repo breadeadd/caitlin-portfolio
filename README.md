@@ -14,4 +14,4 @@ There's a little bit about me, my involvement in my communities, my projects and
 - Planned migration to **React** in the future
 
 ## ‼️Deployment
-[Find it here!](https://breadeadd.github.io/caitlin-portfolio/index.html)
+[Find it here!](https://breadeadd.github.io/caitlin-portfolio/)
