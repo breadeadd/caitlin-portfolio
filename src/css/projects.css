@@ -18,6 +18,7 @@ html, body {
   padding: 0;
   min-height: 100vh;
   background-color: var(--color-main);
+  overflow-x: hidden;
 }
 
 /* Remove default margins from headings and paragraphs only */
