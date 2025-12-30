@@ -10,7 +10,6 @@ There's a little bit about me, my involvement in my communities, my projects and
 - HTML / CSS  
 - JavaScript  
 - Tailwind CSS  
-- Working on: Responsive and mobile design  
 - Planned migration to **React** in the future
 
 ## ‼️Deployment
