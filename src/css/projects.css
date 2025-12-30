@@ -31,7 +31,7 @@ h1{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw + 1rem, 5rem);
 }
 
 h2{
@@ -39,7 +39,7 @@ h2{
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 3vw + 0.6rem, 2rem);
 }
 
 h3 {
@@ -63,7 +63,7 @@ h4 {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw + 0.3rem, 1.2rem);
 }
 
 p {
