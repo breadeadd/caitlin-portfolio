@@ -69,6 +69,12 @@ p {
   font-size: clamp(1rem, 1.5vw + 0.35rem, 1.2rem);
 }
 
+hr.rounded {
+  border-top: 8px solid #f1e2c6;
+  border-radius: 5px;
+  margin: 0% 4%;
+}
+
 /* Scroll reveal animation */
 .reveal {
   opacity: 0;
