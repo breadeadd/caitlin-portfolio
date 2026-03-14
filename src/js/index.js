@@ -10,8 +10,8 @@ const helloText = "Hello, I am Caitlin!";
 
 const buttons = document.querySelectorAll(".btn");
 
-const sesaTitle = "SESA | MARKETING COORDINATOR";
-const sesaDesc = "Software Engineering Students Association (SESA) aims to enhance the experience of software engineering students at UoA. As the Marketing Coordinator, I design graphics and promotional materials for events for students to connect, learn, and have fun. During my time in this role, I have established an iconic branding and mascot design for SESA.";
+const sesaTitle = "SESA | MARKETING DIRECTOR";
+const sesaDesc = "Marketing Director for SESA, leading a creative team to craft the visual identity of Auckland's software engineering community. I spearheaded our iconic branding and mascot, managing the full lifecycle of promotional campaigns that connect students with industry. I'm passionate about using design to build community, mentor new talent, and make the engineering journey more engaging for everyone.";
 const robogalsTitle = "ROBOGALS AKL | MARKETING MANAGER";
 const robogalsDesc = "Robogals AKL is an organization that aims to inspire and empower young women to pursue careers in STEM. As the Marketing Manager, I am responsible for creating promotional materials and managing our social media presence to engage with our community and attract new members. Furthermore I actively volunteer at our various workshops.";
 
